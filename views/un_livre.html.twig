@@ -1,0 +1,35 @@
+{%extends "base.html.twig" %}
+
+{% block title  %}
+	Mon livre
+{% endblock %}
+
+
+{% block myTab %}
+	{{isModification}}
+	<div class="container pt-5">
+		<div class="row">
+			<img src="https://picsum.photos/200/200" class="img-responsive w-25">
+
+			<div class="col">
+				<h2>Informations:</h2>
+				<p>Nom :
+					{{livre.nom}}</p>
+				<p>Auteur :
+					{{livre.auteur}}</p>
+				<p>Pages :
+					{{livre.pages}}</p>
+
+
+			</div>
+			<div class="col">
+				<h2>Résumé:</h2>
+				<p>description :{{livre.description}}</p>
+			</div>
+
+		</div>
+
+
+	</div>
+
+{% endblock %}

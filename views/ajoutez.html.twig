@@ -1,0 +1,35 @@
+{%extends "base.html.twig"%}
+
+{% block title  %}Ajoutez
+{% endblock %}
+
+{% block myTab %}
+
+	<div class="container mt-5">
+		<form method="post" action='/renvoie'>
+
+			<div class="mb-3">
+				<label for="nom" class="form-label">Nom</label>
+				<input type="text" class="form-control" id="nom" name='nom'>
+
+
+			</div>
+			<div class="mb-3">
+				<label for="auteur" class="form-label">Auteur</label>
+				<input type="text" class="form-control" id="auteur" name='auteur'>
+
+
+			</div>
+			<div class="mb-3">
+				<label for="pages" class="form-label">Pages</label>
+				<input type="number" class="form-control" id="pages" name='pages'>
+
+
+			</div>
+
+			<button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+		</form>
+	</div>
+
+
+{% endblock %}
